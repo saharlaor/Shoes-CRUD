@@ -24,13 +24,15 @@ class Update extends Component {
           placeholder={`New ${key}`}
           value={this.state[key]}
           onChange={this.handleChange}
+          required
         />
         <br />
       </Fragment>
     ));
   };
 
-  handleUpdate = async () => {
+  handleUpdate = async (e) => {
+    e.preventDefault();
     this.props.visFunc();
 
     await api.put(this.props.id, this.state);
@@ -55,7 +57,9 @@ class Update extends Component {
     return (
       <div className="Update">
         {inputs}
-        <button onClick={this.handleUpdate}>Update</button>
+        <button type="submit" onClick={this.handleUpdate}>
+          Update
+        </button>
         <button onClick={this.handleCancel}>Cancel</button>
       </div>
     );

@@ -18,12 +18,14 @@ class Create extends Component {
           placeholder={`New ${key}`}
           value={this.state[key]}
           onChange={this.handleChange}
+          required
         />
       </Fragment>
     ));
   };
 
-  postProducts = async () => {
+  postProducts = async (e) => {
+    e.preventDefault();
     await api.post("/", this.state);
     this.props.getProducts();
     this.props.hideCreate();
@@ -38,7 +40,9 @@ class Create extends Component {
     return (
       <div className="Create">
         {this.generateInputs()}
-        <button onClick={this.postProducts}>Create</button>
+        <button type="submit" onClick={this.postProducts}>
+          Create
+        </button>
       </div>
     );
   }
