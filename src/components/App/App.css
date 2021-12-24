@@ -1,4 +1,20 @@
-.app {
-  display: inline-block;
+.App {
+  padding: 1rem;
+}
+
+.App__shoe-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.create-btn {
+  width: 100%;
+  margin: 0.5rem;
 }
 /*# sourceMappingURL=App.css.map */
