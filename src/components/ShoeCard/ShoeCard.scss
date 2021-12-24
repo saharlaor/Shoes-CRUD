@@ -1,0 +1,14 @@
+.ShoeCard {
+  display: inline-block;
+  line-height: 24.4px;
+  padding: 0.5rem;
+  border: 1px solid black;
+  button {
+    width: 50%;
+  }
+}
+
+button.remove-btn {
+  display: block;
+  width: 100%;
+}

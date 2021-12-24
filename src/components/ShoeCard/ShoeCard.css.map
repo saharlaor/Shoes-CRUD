@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,SAAS,CAAC;EACR,OAAO,EAAE,YAAY;EACrB,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,MAAM;EACf,MAAM,EAAE,eAAe;CAIxB;;AARD,AAKE,SALO,CAKP,MAAM,CAAC;EACL,KAAK,EAAE,GAAG;CACX;;AAGH,AAAA,MAAM,AAAA,WAAW,CAAC;EAChB,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "ShoeCard.scss"
+    ],
+    "names": [],
+    "file": "ShoeCard.css"
+}
